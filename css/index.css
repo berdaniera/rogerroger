@@ -1,0 +1,25 @@
+body {
+    min-width: 360px;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+}
+
+#key_entered, #understand_content, #respond_content, #respond_loading {
+    display: none;
+}
+
+.text-gradient {
+    background: linear-gradient(to right, #30CFD0, #c43ad6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bottom {
+    width: 100%;
+    border-top: 1px solid #D3D3D3;
+}
+
+.page-content {
+    flex: 1 0 auto;
+}

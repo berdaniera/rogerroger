@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-indigo.min.css" />
+        <script src="scripts/material.min.js"></script>
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <div class="mdl-grid page-content" id="key_needed">
+            <div class="mdl-cell mdl-cell--12-col">
+                <center>
+                    <h1 class="mdl-color-text--grey">
+                        Roger Roger <br />
+                        <span class="material-icons mdl-color-text--grey" style="font-size:72px;">support_agent</span>
+                    </h1>
+                <p>To get started, enter your Rroger Roger API Key!</p>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="key_input">
+                    <label class="mdl-textfield__label" for="key_input">API Key</label>
+                </div>
+                <div>
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="save_key_button">Add key</button>
+                </div>
+                </center>
+            </div>
+        </div>
+        <div class="page-content" id="key_entered">
+            <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                <div class="mdl-tabs__tab-bar">
+                    <a href="#understand-panel" class="mdl-tabs__tab is-active">UNDERSTAND</a>
+                    <a href="#respond-panel" class="mdl-tabs__tab">RESPOND</a>
+                </div>
+                <div class="mdl-grid mdl-tabs__panel is-active" id="understand-panel">
+                    <div class="mdl-cell mdl-cell--12-col container">
+                        <div id="understand_loading">
+                            <p>
+                                <center><div class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div></center>
+                            </p>
+                        </div>
+                        <div id="understand_content">
+                            <p>
+                                <p>SUMMARY</p>
+                                <p id="msg_summary"></p>
+                                <div id="sentiment_chip">
+                                    <p>SENTIMENT</p>
+                                    <p>
+                                        <span class="mdl-chip">
+                                            <span id="sentiment" class="mdl-chip__text"></span>
+                                        </span>
+                                    </p>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdl-grid mdl-tabs__panel" id="respond-panel">
+                    <div class="mdl-cell mdl-cell--12-col container">
+                        <p>I want my response to be:</p>
+                        <p>
+                            <button type="button" class="mdl-chip respond" name="courteous">
+                                <span class="mdl-chip__text">Courteous</span>
+                            </button>
+                            <button type="button" class="mdl-chip respond" name="concise">
+                                <span class="mdl-chip__text">Concise</span>
+                            </button>
+                            <button type="button" class="mdl-chip respond" name="direct">
+                                <span class="mdl-chip__text">Direct</span>
+                            </button>
+                            <button type="button" class="mdl-chip respond" name="friendly">
+                                <span class="mdl-chip__text">Friendly</span>
+                            </button>
+                            <button type="button" class="mdl-chip respond" name="helpful">
+                                <span class="mdl-chip__text">Helpful</span>
+                            </button>
+                            <button type="button" class="mdl-chip respond" name="polite">
+                                <span class="mdl-chip__text">Polite</span>
+                            </button>
+                            <button type="button" class="mdl-chip respond" name="professional">
+                                <span class="mdl-chip__text">Professional</span>
+                            </button>
+                            <button type="button" class="mdl-chip respond" name="sympathetic">
+                                <span class="mdl-chip__text">Sympathetic</span>
+                            </button>
+                        </p>
+                        <div id="respond_loading">
+                            <p>
+                                <center><div class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div></center>
+                            </p>
+                        </div>
+                        <div id="respond_content">
+                            <div>SUGGESTED REPLY (edit inline)</div>
+                            <div class="mdl-textfield mdl-js-textfield" style="width:100%;">
+                                <textarea class="mdl-textfield__input" type="text" rows="10" id="reply_textbox"></textarea>
+                            </div>
+                            <div>
+                                <button class="mdl-button mdl-js-button mdl-button--icon feedback_reply"><i class="material-icons" id ="thumbs_up">thumb_up_off_alt</i></button>
+                                <button class="mdl-button mdl-js-button mdl-button--icon feedback_reply"><i class="material-icons" id="thumbs_down">thumb_down_off_alt</i></button>
+                                <button class="mdl-button mdl-js-button" id="copy_reply"><i class="material-icons">filter_none</i> Copy</button>
+                            </div>
+                        </div>
+                        <div id="copied_snackbar" class="mdl-js-snackbar mdl-snackbar">
+                          <div class="mdl-snackbar__text"></div>
+                          <button class="mdl-snackbar__action" type="button"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mdl-grid bottom">
+            <div class="mdl-cell">
+                <ul class="mdl-mini-footer__link-list">
+                <li><a href="#" id="change_key_button" class="mdl-color-text--grey">Change API Key</a></li>
+                <li><a href="https://airtable.com/shr3pS0ypzR484Fvl" target="_blank" class="mdl-color-text--grey">Help</a></li>
+                <!-- <li><a href="#" class="mdl-color-text--grey" style="pointer-events: none;">Privacy & Terms</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </body>
+    <script src="scripts/index.js"></script>
+</html>
