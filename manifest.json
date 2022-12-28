@@ -1,6 +1,6 @@
 {
     "name": "Roger Roger",
-    "description": "Analyze and respond to support messages",
+    "description": "Understand and respond to support messages",
     "version": "0.1.0",
     "manifest_version": 3,
     "icons": {
@@ -11,7 +11,7 @@
     },
     "action": {
         "default_popup": "index.html",
-        "default_title": "Analyze support messages"
+        "default_title": "Interpret support messages"
     },
     "permissions": ["activeTab","storage","scripting"]
 }
