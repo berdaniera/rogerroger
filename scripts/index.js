@@ -21,7 +21,8 @@ const saveKey = () => {
                 .then((res) => addUnderstanding(res));
         });
         // restart
-        window.close();
+        window.location.reload();
+        //window.close();
     }
 };
 

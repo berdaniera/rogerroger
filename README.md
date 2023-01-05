@@ -1,13 +1,17 @@
+![Roger Roger](img/rogerrogerlogo.svg)
+
 # Roger Roger
 
-This is the code for our private beta of Roger Roger. It is built for Chrome or other Chromium browsers (e.g., Brave)
+This is code for our private beta of Roger Roger. It is built for Chrome or other Chromium browsers (e.g., Brave).
 
 ## Installation
 
 1. Download Zip: Click the green `<> Code` button in the upper right, and then click `Download ZIP`.
+    - ![How to download](img/howtodownload.png)
 2. Unzip locally: Save and unzip the folder somewhere.
 3. Install extension: Follow the directions here: https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked
 4. Open extension: Click the `Extension` icon on the toolbar to open.
+    - ![How to run](img/howtorun.png)
 
 ## Usage
 

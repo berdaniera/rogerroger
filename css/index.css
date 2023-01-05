@@ -10,7 +10,7 @@ body {
 }
 
 .text-gradient {
-    background: linear-gradient(to right, #30CFD0, #c43ad6);
+    background: linear-gradient(45deg, #695EE6, #FF7A7A);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
