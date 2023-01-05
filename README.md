@@ -1,4 +1,4 @@
-<img src="img/rogerrogerlogo.png" width="350"/>
+<img src="img/rogerroger.png" width="350"/>
 
 # Roger Roger
 
