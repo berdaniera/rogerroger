@@ -8,8 +8,14 @@ const checkForKey = () => {
 
 const saveKey = () => {
     const input = document.getElementById('key_input');
+    const privacy = document.getElementById('privacy-checkbox');
     console.log(input.value);
-    if (input) {
+    if (!privacy.checked) {
+        document.querySelector('#copied_snackbar').MaterialSnackbar.showSnackbar({
+            message: 'Please check our Privacy Policy',
+            timeout: 1000
+        });
+    } else if (!input.value == '') {
         // Encode String
         const encodedValue = encode(input.value);
         // Save to google storage
@@ -23,6 +29,11 @@ const saveKey = () => {
         // restart
         window.location.reload();
         //window.close();
+    } else {
+        document.querySelector('#copied_snackbar').MaterialSnackbar.showSnackbar({
+            message: 'Please enter an API key',
+            timeout: 1000
+        });
     }
 };
 

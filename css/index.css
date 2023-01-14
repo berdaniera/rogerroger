@@ -23,3 +23,8 @@ body {
 .page-content {
     flex: 1 0 auto;
 }
+
+.checking {
+    text-align:left;
+    padding:0 15 25 15px;
+}

@@ -19,9 +19,15 @@
                     <input class="mdl-textfield__input" type="text" id="key_input">
                     <label class="mdl-textfield__label" for="key_input">API Key</label>
                 </div>
-                <div>
+                <p class="checking">
+                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="privacy-checkbox">
+                      <input type="checkbox" id="privacy-checkbox" class="mdl-checkbox__input">
+                      <span class="mdl-checkbox__label">I have read and agree to the Roger Roger <a href="https://tryrogerroger.github.io/privacy/" target="_blank">Privacy Policy</a></span>
+                    </label>
+                </p>
+                <p>
                     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="save_key_button">Add key</button>
-                </div>
+                </p>
                 </center>
             </div>
         </div>
@@ -99,21 +105,20 @@
                                 <button class="mdl-button mdl-js-button" id="copy_reply"><i class="material-icons">filter_none</i> Copy</button>
                             </div>
                         </div>
-                        <div id="copied_snackbar" class="mdl-js-snackbar mdl-snackbar">
-                          <div class="mdl-snackbar__text"></div>
-                          <button class="mdl-snackbar__action" type="button"></button>
-                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div id="copied_snackbar" class="mdl-js-snackbar mdl-snackbar">
+          <div class="mdl-snackbar__text"></div>
+          <button class="mdl-snackbar__action" type="button"></button>
         </div>
         <div class="mdl-grid bottom">
             <div class="mdl-cell">
                 <ul class="mdl-mini-footer__link-list">
                 <li><a href="#" id="change_key_button" class="mdl-color-text--grey">Settings</a></li>
                 <li><a href="https://airtable.com/shr3pS0ypzR484Fvl" target="_blank" class="mdl-color-text--grey">Help</a></li>
-                <!-- <li><a href="#" class="mdl-color-text--grey" style="pointer-events: none;">Privacy & Terms</a></li> -->
-                </ul>
+                <li><a href="https://tryrogerroger.github.io/privacy/" target="_blank" class="mdl-color-text--grey">Privacy & Terms</a></li>
             </div>
         </div>
     </body>
